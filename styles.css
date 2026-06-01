@@ -1,0 +1,18 @@
+/* Simple responsive styles for the two-page site */
+:root{
+  --bg:#f7f8fa;
+  --card:#ffffff;
+  --text:#222;
+  --accent:#2b7cff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;line-height:1.5}
+.site-header{background:var(--card);padding:16px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e6e9ee}
+.name{margin:0;font-size:1.2rem}
+.main-nav a{color:var(--text);text-decoration:none;margin-left:12px}
+.main-nav a.active{color:var(--accent);font-weight:600}
+.container{max-width:900px;margin:28px auto;padding:0 16px}
+section{background:var(--card);padding:16px;border-radius:8px;margin-bottom:16px;box-shadow:0 1px 2px rgba(16,24,40,0.04)}
+h2{margin-top:0}
+.site-footer{text-align:center;padding:18px 0;color:#667085;font-size:0.95rem}
+@media (min-width:700px){.name{font-size:1.5rem}.main-nav a{margin-left:20px}}
